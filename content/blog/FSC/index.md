@@ -8,6 +8,7 @@ tags:
   - drone
   - simulation
   - optimal trajectory
+  - controller
 ---
 
 From September till December, 2024, I joint a team in UTIAS, University of Toronto, which mainly focus on Autonomous Drone Racing.
