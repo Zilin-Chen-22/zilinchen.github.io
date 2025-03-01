@@ -38,12 +38,16 @@ The vehicle can follow the line automatically. Here is an video when we are stil
 
 ![line following video](car_line.mp4)
 
+[Click here](https://zilin-chen-22.github.io/zilinchen.github.io/blog/intelligent-car/car_line.mp4) if not working.
+
 ### Path Finding
 
 Here is one video while testing:
 
-![pf1 video](obstacles.mp4)
+![Path Finding Video 1](obstacles.mp4)
+[Click here](https://zilin-chen-22.github.io/zilinchen.github.io/blog/intelligent-car/obstacles.mp4) if not working.
 
 Here is another one:
 
-![pf2 video](obstacles2.mp4)
+![Path Finding Video 2](obstacles2.mp4)
+[Click here](https://zilin-chen-22.github.io/zilinchen.github.io/blog/intelligent-car/obstacles2.mp4) if not working.
