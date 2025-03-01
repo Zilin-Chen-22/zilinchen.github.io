@@ -9,6 +9,8 @@ tags:
   - work space
   - MATLAB
   - simulation
+image:
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
 
 From Febuary till December, 2024, I joint a team of four to work on a dual-arm collaborative robot system. 
