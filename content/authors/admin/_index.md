@@ -1,6 +1,7 @@
 ---
 # Display name
-title: Zilin Chen <br> 陈子林
+title: Zilin Chen
+subtitle: 陈子林
 
 # Name pronunciation (optional)
 name_pronunciation: ''
