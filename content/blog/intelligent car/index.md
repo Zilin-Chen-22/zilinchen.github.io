@@ -1,7 +1,7 @@
 ---
 title: Intelligent Autonomous Guided Car
 summary: Designed an autonomous car-shaped vehicle capable of transporting objects from start to finish
-date: 2024-08-03
+date: 2024-07-01
 authors:
   - admin
 tags:

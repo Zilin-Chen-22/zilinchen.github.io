@@ -1,7 +1,7 @@
 ---
 title: Research on Dual-arm Collaborative Robot Working Space
 summary: Developed programs to find the working space for a dual-arm collaborative robot system
-date: 2024-12-01
+date: 2024-03-12
 authors:
   - admin
 tags:

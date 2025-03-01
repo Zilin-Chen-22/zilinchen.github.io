@@ -1,7 +1,7 @@
 ---
 title: UTAT-ADR Autonomous Drone Racing Research
 summary: Built a simulator for the racing drone, also developed some basic algorithm for yaw-planning.
-date: 2024-12-23
+date: 2024-09-20
 authors:
   - admin
 tags:
