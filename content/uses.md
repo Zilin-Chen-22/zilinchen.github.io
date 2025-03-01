@@ -1,26 +1,34 @@
 ---
-title: Uses
-date: 2023-10-24
+title: Skills
+date: 2025-03-01
 hide_date: true
 reading_time: false
 ---
 
-The idea of a Uses page is to tell you about the stuff I use.
+## Academic skills
+### Programming language
+I am familiar with a number of programming languages:
+- C (including C99/clang/gcc, etc.)
+- Python
+- MATLAB
 
-Make sure to check out [uses.tech](https://uses.tech/) for a list of everyone's Uses pages!
+I'm also a user for other languages:
+- Java
+- C++
+- CMake
 
-I often get asked about what software or hardware I use, so this page will serve as a living document and a place to point curious readers to when I get asked.
+### Software
+I know how to use several useful tools:
+- AutoCAD
+- SolidWorks
+- Multisim
 
-## Website
+## Musical Instrument
+I am a piano player, also a double bass player. I know some other instruments as well, such as cello.
 
-- [Hugo Blox](https://hugoblox.com) (see the tutorial on [Getting Started](/blog/get-started/))
+I earn myself some title, such as:
+- Central Conservatory of Music Piano Amateur Player, Grade 9 (highest grade)
+- China Conservatory of Music Double Bass Player, Grade 10 (highest grade)
+- Practical Grade 8 for Piano, ABRSM (highest grade in practical)
 
-## Editor + Terminal
-
-- [Visual Studio Code](https://code.visualstudio.com/) is my current editor
-- Chrome is my main browser
-- iTerm2 is my terminal
-
-## Desktop Apps
-
-- Better Touch Tool for window management and custom keyboard shortcuts
+I'm also the former Vice President of Tsinghua University Symphonic Orchestra, and the conductor for its second team.
