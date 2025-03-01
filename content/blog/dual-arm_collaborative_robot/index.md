@@ -16,7 +16,7 @@ image:
 From Febuary till December, 2024, I joint a team of four to work on a dual-arm collaborative robot system. 
 Under assistant professor Ze Wang's guidance, I mainly focus on finding the work space of the robot.
 
-# Research Overview
+## Research Overview
 *Advisor: Ze Wang, Professor and Assistant Dean at School of Mechanical Engineering, Tsinghua University*
 
 The main focus of this study is to use dual-arm collaborative robot system to enhance the stiffness while working. Most dual-arm system do not have a rigid connection between the two arms. We are developing a system which have a rigid connection, which is the main innovation.
@@ -37,7 +37,7 @@ The main focus of this study is to use dual-arm collaborative robot system to en
   - Collaborated with a team of four to design different robot configurations.
   - Focused on improving stiffness and overall structural integrity of the robots.
 
-# My Contribution
+## My Contribution
 I mainly focus on the working space of this system. Unlike most dual-arm robot system, ours need to consider the problem of two robotic arms interfering with each other.
 
 Using MATLAB to do simulating work, I developed a programme using Monte Carlo method to find the available workspace.
