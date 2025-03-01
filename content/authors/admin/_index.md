@@ -54,4 +54,5 @@ highlight_name: true
 website: ""
 ---
 
-I'm a third-year undergraduate student in the department of Mechanical Engineering, Tsinghua University. I mainly focus on robotics and control. 
+I'm a third-year undergraduate student in the school of Mechanical Engineering, Tsinghua University. I mainly focus on robotics and control. 
+I have working experience with STM32 microcontroller, MATLAB simulation, FRANKA Panda robot, and quadcopter drone.
