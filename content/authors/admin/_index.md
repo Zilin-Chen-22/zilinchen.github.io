@@ -7,7 +7,7 @@ name_pronunciation: ''
 
 # Full name (for SEO)
 first_name: Zilin
-last_name: Chien
+last_name: Chen
 
 # Status emoji
 # status:
