@@ -9,19 +9,20 @@ reading_time: false
 ### Programming language
 I am familiar with a number of programming languages:
 - C (including C99/clang/gcc, etc.)
+- C++
+- CMake
 - Python
 - MATLAB
 
 I'm also a user for other languages:
 - Java
-- C++
-- CMake
 
 ### Software
 I know how to use several useful tools:
 - AutoCAD
 - SolidWorks
 - Multisim
+- Ansys
 
 ## Musical Instrument
 I am a piano player, also a double bass player. I know some other instruments as well, such as cello.

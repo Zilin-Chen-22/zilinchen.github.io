@@ -24,7 +24,9 @@ Our vehicle is asked to finish two task automatically:
 
 ### Hardware
 We use STM32 as the main controller, controlling all the motors, servos, and send and grab data from bluetooth, openMV and Gyro (We use JY901S).
-![STM32 connect](stm32.png)
+<div style="text-align: center;">
+  <img src="stm32.png" alt="STM32 connect" style="width: 50%;">
+</div>
 
 In the main function, read OpenMV, Bluetooth, and IMU data in a loop with 5ms as one unit. One loop takes 20ms (the remaining 5ms is used to process all the above data). Refresh motor and servo control data in each loop.
 
@@ -36,7 +38,11 @@ Detail issues:
 ### Line following
 The vehicle can follow the line automatically. Here is an video when we are still testing:
 
-![line following video](car_line.mp4)
+<div style="text-align: center;">
+  <video src="car_line.mp4" controls="controls" width="50%">
+  您的浏览器不支持视频标签。
+  </video>
+</div>
 
 [Click here](https://zilin-chen-22.github.io/zilinchen.github.io/blog/intelligent-car/car_line.mp4) if not working.
 
@@ -44,10 +50,20 @@ The vehicle can follow the line automatically. Here is an video when we are stil
 
 Here is one video while testing:
 
-![Path Finding Video 1](obstacles.mp4)
+<div style="text-align: center;">
+  <video src="obstacles.mp4" controls="controls" width="50%">
+  您的浏览器不支持视频标签。
+  </video>
+</div>
+
 [Click here](https://zilin-chen-22.github.io/zilinchen.github.io/blog/intelligent-car/obstacles.mp4) if not working.
 
 Here is another one:
 
-![Path Finding Video 2](obstacles2.mp4)
+<div style="text-align: center;">
+  <video src="obstacles2.mp4" controls="controls" width="50%">
+  您的浏览器不支持视频标签。
+  </video>
+</div>
+
 [Click here](https://zilin-chen-22.github.io/zilinchen.github.io/blog/intelligent-car/obstacles2.mp4) if not working.
