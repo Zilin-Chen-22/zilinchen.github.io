@@ -1,7 +1,7 @@
 ---
 title: 7-DOF Robotic Arm Motion Planning Algorithm Development for Humanoid Robots  
 summary: Developing and optimizing motion planning algorithms for Xiaomi's humanoid robot arm, achieving industrial-grade precision through simulation-physical validation.  
-date: 2023-07-14  
+date: 2025-07-15 
 authors:  
  - admin  
 tags:  
