@@ -111,6 +111,31 @@ main {
   padding-top: 1rem;
 }
 
+/* The default listing is intentionally narrow for long-form reading. On the
+   homepage, use the available desktop width for a clearer project overview. */
+@media (min-width: 1024px) {
+  .blox-collection > .flex.flex-col.items-center.px-6 > .container[class*="max-w-"] {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: min(1180px, calc(100vw - 80px)) !important;
+    width: 100%;
+  }
+
+  .blox-collection > .flex.flex-col.items-center.px-6 > .container[class*="max-w-"] > a {
+    margin: 0 !important;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .blox-collection > .flex.flex-col.items-center.px-6 > .container[class*="max-w-"] {
+    max-width: min(720px, calc(100vw - 48px)) !important;
+    width: 100%;
+  }
+}
+
 [class*="collection"] h2,
 [class*="collection"] h3 {
   color: var(--site-ink);
@@ -184,6 +209,28 @@ footer.site-footer [class*="powered"] {
 @media (max-width: 767px) {
   body {
     font-size: 0.98rem;
+  }
+
+  .page-body {
+    overflow-x: hidden;
+  }
+
+  .blox-resume-biography .resume-biography {
+    padding-bottom: 1.25rem;
+  }
+
+  .blox-resume-biography .avatar-wrapper {
+    margin-top: 1.5rem !important;
+  }
+
+  .blox-collection > .flex.flex-col.items-center.px-6 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .blox-collection > .flex.flex-col.items-center.px-6 > .container[class*="max-w-"] {
+    max-width: 100% !important;
+    width: 100%;
   }
 
   [class*="resume-biography"] {
