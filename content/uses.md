@@ -5,7 +5,8 @@ hide_date: true
 reading_time: false
 ---
 
-The tools I use to turn ideas into working robotic systems.
+The tools I use to turn ideas into working robotic systems, plus the music
+and activities that keep me curious outside the lab.
 
 ## Academic skills
 ### Programming language

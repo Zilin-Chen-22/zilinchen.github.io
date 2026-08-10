@@ -170,6 +170,206 @@ main {
   transform: scale(1.035);
 }
 
+/* Research index page: turn the default narrow feed into a readable project
+   overview while keeping the individual cards easy to scan. */
+.page-body > .flex.flex-col.items-center > .container[class*="max-w-"] {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: min(1180px, calc(100vw - 80px)) !important;
+  overflow: visible;
+  width: 100%;
+}
+
+.page-body > .flex.flex-col.items-center > .container[class*="max-w-"] > a {
+  background: var(--site-panel);
+  border: 1px solid var(--site-line);
+  border-radius: var(--site-radius);
+  box-shadow: 0 8px 26px rgba(28, 55, 46, 0.045);
+  display: block;
+  margin: 0 !important;
+  min-width: 0;
+  overflow: hidden;
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+
+.page-body > .flex.flex-col.items-center > .container[class*="max-w-"] > a:hover {
+  border-color: rgba(11, 118, 110, 0.3);
+  box-shadow: 0 18px 36px rgba(28, 55, 46, 0.12);
+  transform: translateY(-5px);
+}
+
+.page-body > .flex.flex-col.items-center > .container[class*="max-w-"] > a > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page-body > .flex.flex-col.items-center > .container[class*="max-w-"] > a [class*="flex-shrink-0"] {
+  width: 100%;
+}
+
+.page-body > .flex.flex-col.items-center > .container[class*="max-w-"] > a img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.page-body > .flex.flex-col.items-center > .container[class*="max-w-"] > a [class~="p-8"] {
+  padding: 1.25rem 1.35rem 1.35rem;
+}
+
+/* Article pages: create a focused reading column with a stronger title and
+   predictable media sizing across research posts. */
+.page-body:has(.article-header) > .mx-auto.flex.max-w-screen-xl {
+  max-width: 1400px;
+}
+
+.page-body:has(.article-header) main.max-w-6xl {
+  max-width: 980px;
+  padding-bottom: 4rem;
+}
+
+.page-body:has(.article-header) main > h1 {
+  font-size: clamp(2rem, 4vw, 3.65rem);
+  line-height: 1.08;
+  margin-bottom: 1.25rem;
+  max-width: 900px;
+}
+
+.page-body:has(.article-header) main > .mt-4.mb-16 {
+  margin-bottom: 2.25rem;
+}
+
+.page-body:has(.article-header) .article-header {
+  background: var(--site-panel);
+  border: 1px solid var(--site-line);
+  border-radius: var(--site-radius);
+  box-shadow: var(--site-shadow);
+  margin-bottom: 3rem;
+  max-width: min(900px, 100%) !important;
+  overflow: hidden;
+}
+
+.page-body:has(.article-header) .article-header .featured-image {
+  display: block;
+  height: auto;
+  max-height: 620px;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.page-body:has(.article-header) .article-header + .prose {
+  max-width: 900px;
+}
+
+.page-body:has(.article-header) .prose h2 {
+  border-top: 1px solid var(--site-line);
+  margin-top: 3.25rem;
+  padding-top: 2rem;
+}
+
+.page-body:has(.article-header) .prose p,
+.page-body:has(.article-header) .prose li {
+  line-height: 1.85;
+}
+
+.page-body:has(.article-header) .prose img,
+.page-body:has(.article-header) .prose video {
+  border-radius: 16px;
+  height: auto;
+  max-width: 100%;
+}
+
+.page-body:has(.article-header) .prose > div[style*="text-align:center"] {
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid var(--site-line);
+  border-radius: 18px;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.page-body:has(.article-header) .prose pre {
+  border: 1px solid var(--site-line);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(28, 55, 46, 0.08);
+  overflow-x: auto;
+}
+
+.page-body:has(.article-header) .max-w-prose[class*="print:hidden"] > .flex.justify-center {
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: flex-start;
+}
+
+.page-body:has(.article-header) .max-w-prose[class*="print:hidden"] > .flex.justify-center a {
+  margin: 0;
+}
+
+/* Skills page: present the long-form profile as a calm, bounded content
+   panel instead of letting it blend into the page background. */
+body:has(h2#academic-skills) .page-body > .mx-auto.flex.max-w-screen-xl {
+  max-width: 1120px;
+}
+
+body:has(h2#academic-skills) .page-body main.max-w-6xl {
+  max-width: 900px;
+}
+
+body:has(h2#academic-skills) .page-body main > .prose {
+  background: var(--site-panel);
+  border: 1px solid var(--site-line);
+  border-radius: var(--site-radius);
+  box-shadow: var(--site-shadow);
+  max-width: 900px;
+  padding: clamp(1.25rem, 4vw, 3.5rem);
+}
+
+body:has(h2#academic-skills) .page-body main > .prose h2 {
+  border-top: 1px solid var(--site-line);
+  margin-top: 2.75rem;
+  padding-top: 1.75rem;
+}
+
+body:has(h2#academic-skills) .page-body main > .prose > ul {
+  background: rgba(11, 118, 110, 0.06);
+  border: 1px solid rgba(11, 118, 110, 0.12);
+  border-radius: 14px;
+  display: grid;
+  gap: 0.35rem 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 1rem 1.25rem 1rem 2rem;
+}
+
+/* Topics page: make taxonomy links feel like filters rather than raw text. */
+body:has(.page-body .flex.flex-row.gap-6.flex-wrap) .page-body > .max-w-prose.mx-auto.my-5 {
+  max-width: 1000px;
+}
+
+body:has(.page-body .flex.flex-row.gap-6.flex-wrap) .page-body .flex.flex-row.gap-6.flex-wrap {
+  gap: 0.75rem;
+}
+
+body:has(.page-body .flex.flex-row.gap-6.flex-wrap) .page-body .flex.flex-row.gap-6.flex-wrap > a {
+  background: var(--site-panel) !important;
+  border: 1px solid var(--site-line);
+  border-radius: 999px;
+  box-shadow: 0 5px 16px rgba(28, 55, 46, 0.06);
+  color: var(--site-accent-dark) !important;
+  padding: 0.7rem 1rem;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+body:has(.page-body .flex.flex-row.gap-6.flex-wrap) .page-body .flex.flex-row.gap-6.flex-wrap > a:hover {
+  border-color: rgba(11, 118, 110, 0.35);
+  box-shadow: 0 10px 22px rgba(28, 55, 46, 0.1);
+  transform: translateY(-2px);
+}
+
 article,
 .article-container {
   border-radius: var(--site-radius);
