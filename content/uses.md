@@ -1,9 +1,11 @@
 ---
-title: Skills
+title: Skills & Tools
 date: 2025-03-01
 hide_date: true
 reading_time: false
 ---
+
+The tools I use to turn ideas into working robotic systems.
 
 ## Academic skills
 ### Programming language

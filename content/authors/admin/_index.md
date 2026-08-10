@@ -17,7 +17,7 @@ last_name: Chen
 superuser: true
 
 # Role/position/tagline
-role: Third-year undergraduate student
+role: Robotics & Control Researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -25,7 +25,7 @@ organizations:
     url: https://www.me.tsinghua.edu.cn/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include robotics,control and programmable matter.
+bio: I work at the intersection of robotics, control, and programmable matter.
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -33,6 +33,9 @@ profiles:
   - icon: at-symbol
     url: 'mailto:chenzili22@mails.tsinghua.edu.cn'
     label: E-mail Me
+  - icon: brands/github
+    url: 'https://github.com/Zilin-Chen-22'
+    label: GitHub
   # - icon: brands/x
   #   url: https://twitter.com/GetResearchDev
   # - icon: brands/instagram
@@ -54,5 +57,5 @@ highlight_name: true
 website: ""
 ---
 
-I'm a third-year undergraduate student in the school of Mechanical Engineering, Tsinghua University. I mainly focus on robotics and control. 
+I'm a mechanical engineering student at Tsinghua University. I mainly focus on robotics and control, with a particular interest in how intelligent systems interact with the physical world.
 I have working experience with STM32 microcontroller, MATLAB simulation, FRANKA Panda robot, and quadcopter drone.

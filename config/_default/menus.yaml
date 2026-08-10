@@ -5,9 +5,12 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Topics
-    url: tags/
+  - name: Research
+    url: blog/
     weight: 20
-  - name: Uses
+  - name: Skills
     url: uses/
     weight: 30
+  - name: CV
+    url: uploads/Zilin_Chen_Personal_CV.pdf
+    weight: 40

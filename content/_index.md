@@ -1,9 +1,10 @@
 ---
-title: 'Home'
+title: 'Zilin Chen'
 date: 2023-10-24
 type: landing
 sections:
   - block: resume-biography
+    id: about
     content:
       # The user's folder name in content/authors/
       username: admin
@@ -13,7 +14,10 @@ sections:
       biography:
         style: 'text-align: justify; font-size: 0.8em;'
   - block: collection
+    id: research
     content:
+      title: Selected research & projects
+      text: A growing record of experiments, systems, and algorithms across robotics and intelligent machines.
       filters:
         folders:
           - blog

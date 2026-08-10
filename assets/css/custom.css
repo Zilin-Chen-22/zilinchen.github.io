@@ -1,0 +1,218 @@
+:root {
+  --site-ink: #172a24;
+  --site-muted: #61736b;
+  --site-accent: #0b766e;
+  --site-accent-dark: #07534f;
+  --site-coral: #e87852;
+  --site-bg: #f5f7f4;
+  --site-panel: #ffffff;
+  --site-line: rgba(23, 42, 36, 0.12);
+  --site-shadow: 0 18px 50px rgba(28, 55, 46, 0.08);
+  --site-radius: 22px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at 88% 2%, rgba(232, 120, 82, 0.12), transparent 28rem),
+    radial-gradient(circle at 0% 22%, rgba(11, 118, 110, 0.08), transparent 32rem),
+    var(--site-bg);
+  color: var(--site-ink);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+body::before {
+  background: linear-gradient(90deg, var(--site-accent), var(--site-coral));
+  content: "";
+  height: 3px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+a {
+  color: var(--site-accent);
+  transition: color 180ms ease, opacity 180ms ease, transform 180ms ease;
+}
+
+a:hover {
+  color: var(--site-accent-dark);
+}
+
+nav,
+header {
+  background: rgba(255, 255, 255, 0.84) !important;
+  border-bottom: 1px solid var(--site-line);
+  backdrop-filter: blur(18px);
+}
+
+nav a,
+header a {
+  font-weight: 600;
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+/* Give the biography block a calm editorial hero treatment. */
+[class*="resume-biography"] {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(235, 247, 243, 0.86)) !important;
+  border: 1px solid rgba(11, 118, 110, 0.13);
+  border-radius: calc(var(--site-radius) + 8px);
+  box-shadow: var(--site-shadow);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+[class*="resume-biography"]::after {
+  border: 1px solid rgba(232, 120, 82, 0.24);
+  border-radius: 999px;
+  content: "";
+  height: 13rem;
+  position: absolute;
+  right: -5rem;
+  top: -5rem;
+  width: 13rem;
+}
+
+[class*="resume-biography"] img {
+  border: 5px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 0 16px 32px rgba(23, 42, 36, 0.14);
+}
+
+[class*="resume-biography"] h1,
+[class*="resume-biography"] h2 {
+  color: var(--site-ink);
+  letter-spacing: -0.045em;
+}
+
+[class*="resume-biography"] p {
+  color: var(--site-muted);
+  line-height: 1.8;
+}
+
+[class*="resume-biography"] .btn,
+[class*="resume-biography"] a[class*="button"] {
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* Project collections read as a set of research cards. */
+[class*="collection"] {
+  padding-top: 1rem;
+}
+
+[class*="collection"] h2,
+[class*="collection"] h3 {
+  color: var(--site-ink);
+  letter-spacing: -0.035em;
+}
+
+[class*="collection"] article,
+[class*="collection"] .card,
+[class*="collection"] [class*="card"] {
+  background: var(--site-panel);
+  border: 1px solid var(--site-line);
+  border-radius: var(--site-radius);
+  box-shadow: 0 8px 26px rgba(28, 55, 46, 0.045);
+  overflow: hidden;
+  transition: box-shadow 220ms ease, transform 220ms ease, border-color 220ms ease;
+}
+
+[class*="collection"] article:hover,
+[class*="collection"] .card:hover,
+[class*="collection"] [class*="card"]:hover {
+  border-color: rgba(11, 118, 110, 0.3);
+  box-shadow: 0 18px 36px rgba(28, 55, 46, 0.12);
+  transform: translateY(-5px);
+}
+
+[class*="collection"] img {
+  transition: transform 350ms ease;
+}
+
+[class*="collection"] article:hover img,
+[class*="collection"] .card:hover img {
+  transform: scale(1.035);
+}
+
+article,
+.article-container {
+  border-radius: var(--site-radius);
+}
+
+.article-style h2,
+.article-style h3,
+.article-style h4 {
+  color: var(--site-ink);
+  letter-spacing: -0.03em;
+}
+
+.article-style blockquote {
+  border-left: 4px solid var(--site-coral);
+  color: var(--site-muted);
+}
+
+.article-style img,
+.article-style video {
+  border-radius: 16px;
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--site-line);
+  color: var(--site-muted);
+  margin-top: 4rem;
+  padding-top: 2rem;
+}
+
+footer.site-footer a[href*="hugo"],
+footer.site-footer a[href*="Hugo"],
+footer.site-footer .powered-by,
+footer.site-footer [class*="powered"] {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 0.98rem;
+  }
+
+  [class*="resume-biography"] {
+    border-radius: 18px;
+  }
+
+  [class*="collection"] article,
+  [class*="collection"] .card,
+  [class*="collection"] [class*="card"] {
+    border-radius: 18px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --site-bg: #101a18;
+    --site-panel: #172522;
+    --site-ink: #edf7f2;
+    --site-muted: #a9bbb3;
+    --site-line: rgba(237, 247, 242, 0.14);
+    --site-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+  }
+
+  nav,
+  header {
+    background: rgba(16, 26, 24, 0.86) !important;
+  }
+
+  [class*="resume-biography"] {
+    background: linear-gradient(135deg, rgba(23, 37, 34, 0.98), rgba(16, 59, 55, 0.9)) !important;
+  }
+}

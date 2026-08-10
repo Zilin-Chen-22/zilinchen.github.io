@@ -1,0 +1,8 @@
+<footer class="site-footer container mx-auto flex flex-col justify-items-center text-sm leading-6">
+  {{ partial "functions/get_hook" (dict "hook" "footer-start" "context" .) }}
+  {{ $footer_section_name := site.Params.footer.block | default "minimal" }}
+  {{ $footer_section_path := printf "components/footers/%s.html" $footer_section_name }}
+  {{ if templates.Exists (printf "partials/%s" $footer_section_path) }}
+    {{ partial $footer_section_path . }}
+  {{ end }}
+</footer>
