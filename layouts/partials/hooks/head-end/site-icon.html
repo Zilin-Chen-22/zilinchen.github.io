@@ -1,4 +1,9 @@
 {{ with resources.Get "media/icon.png" }}
   <link rel="icon" type="{{ .MediaType }}" href="{{ .RelPermalink }}">
   <link rel="apple-touch-icon" href="{{ .RelPermalink }}">
+  <script>
+    document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]').forEach((link) => {
+      if (!link.href.endsWith('/media/icon.png')) link.remove();
+    });
+  </script>
 {{ end }}
