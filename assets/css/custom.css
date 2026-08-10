@@ -52,6 +52,34 @@ header {
   backdrop-filter: blur(18px);
 }
 
+/* Keep the theme's content workflow, while replacing its default page chrome. */
+#page-bg,
+.page-wrapper,
+.page-body,
+.hbb-section,
+.home-section-bg {
+  background: var(--site-bg) !important;
+}
+
+#page-bg {
+  display: none !important;
+}
+
+/* The homepage uses a left-anchored editorial navigation on wide screens. */
+@media (min-width: 1024px) {
+  body:has(.blox-portfolio-hero) nav.navbar {
+    justify-content: flex-start !important;
+  }
+
+  body:has(.blox-portfolio-hero) nav.navbar .navbar-brand {
+    display: none;
+  }
+
+  body:has(.blox-portfolio-hero) nav.navbar #nav-menu {
+    margin-left: 0 !important;
+  }
+}
+
 nav a,
 header a {
   font-weight: 600;
@@ -853,6 +881,10 @@ footer.site-footer [class*="powered"] {
     overflow-x: hidden;
   }
 
+  nav.navbar {
+    justify-content: space-between !important;
+  }
+
   .portfolio-home {
     padding: 3rem 1rem 0;
   }
@@ -1014,6 +1046,14 @@ footer.site-footer [class*="powered"] {
   nav,
   header {
     background: rgba(16, 26, 24, 0.86) !important;
+  }
+
+  #page-bg,
+  .page-wrapper,
+  .page-body,
+  .hbb-section,
+  .home-section-bg {
+    background: var(--site-bg) !important;
   }
 
   .portfolio-portrait-card {

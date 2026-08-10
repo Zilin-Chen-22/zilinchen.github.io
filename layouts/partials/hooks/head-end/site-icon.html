@@ -1,0 +1,4 @@
+{{ with resources.Get "media/icon.png" }}
+  <link rel="icon" type="{{ .MediaType }}" href="{{ .RelPermalink }}">
+  <link rel="apple-touch-icon" href="{{ .RelPermalink }}">
+{{ end }}
