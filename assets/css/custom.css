@@ -78,6 +78,10 @@ header {
   body:has(.blox-portfolio-hero) nav.navbar #nav-menu {
     margin-left: 0 !important;
   }
+
+  body:has(.blox-portfolio-hero) nav.navbar > .order-1.ml-auto {
+    margin-left: auto !important;
+  }
 }
 
 nav a,
@@ -699,11 +703,11 @@ main {
 /* Skills page: present the long-form profile as a calm, bounded content
    panel instead of letting it blend into the page background. */
 body:has(h2#academic-skills) .page-body > .mx-auto.flex.max-w-screen-xl {
-  max-width: 1120px;
+  max-width: 1380px;
 }
 
 body:has(h2#academic-skills) .page-body main.max-w-6xl {
-  max-width: 900px;
+  max-width: 1120px;
 }
 
 body:has(h2#academic-skills) .page-body main > .prose {
@@ -711,17 +715,25 @@ body:has(h2#academic-skills) .page-body main > .prose {
   border: 1px solid var(--site-line);
   border-radius: var(--site-radius);
   box-shadow: var(--site-shadow);
-  max-width: 900px;
-  padding: clamp(1.25rem, 4vw, 3.5rem);
+  max-width: 1080px;
+  padding: clamp(1.5rem, 4vw, 4rem);
 }
 
 body:has(h2#academic-skills) .page-body main > .prose h2 {
   border-top: 1px solid var(--site-line);
+  font-family: Georgia, "Times New Roman", serif;
   margin-top: 2.75rem;
   padding-top: 1.75rem;
 }
 
-body:has(h2#academic-skills) .page-body main > .prose > ul {
+body:has(h2#academic-skills) .page-body main > .prose h3 {
+  color: var(--site-accent-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+body:has(h2#academic-skills) .page-body main > .prose ul {
   background: rgba(11, 118, 110, 0.06);
   border: 1px solid rgba(11, 118, 110, 0.12);
   border-radius: 14px;
@@ -729,6 +741,10 @@ body:has(h2#academic-skills) .page-body main > .prose > ul {
   gap: 0.35rem 2rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   padding: 1rem 1.25rem 1rem 2rem;
+}
+
+body:has(h2#academic-skills) .page-body main > .prose li {
+  line-height: 1.65;
 }
 
 /* Topics page: make taxonomy links feel like filters rather than raw text. */
@@ -885,6 +901,10 @@ footer.site-footer [class*="powered"] {
     justify-content: space-between !important;
   }
 
+  nav.navbar > .order-1.ml-auto {
+    margin-left: auto !important;
+  }
+
   .portfolio-home {
     padding: 3rem 1rem 0;
   }
@@ -1024,6 +1044,16 @@ footer.site-footer [class*="powered"] {
   .blox-collection > .flex.flex-col.items-center.px-6 > .container[class*="max-w-"] {
     max-width: 100% !important;
     width: 100%;
+  }
+
+  body:has(h2#academic-skills) .page-body > .mx-auto.flex.max-w-screen-xl,
+  body:has(h2#academic-skills) .page-body main.max-w-6xl,
+  body:has(h2#academic-skills) .page-body main > .prose {
+    max-width: 100%;
+  }
+
+  body:has(h2#academic-skills) .page-body main > .prose ul {
+    grid-template-columns: 1fr;
   }
 
   [class*="collection"] article,
