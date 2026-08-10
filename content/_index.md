@@ -3,21 +3,16 @@ title: 'Zilin Chen'
 date: 2023-10-24
 type: landing
 sections:
-  - block: resume-biography
+  - block: portfolio-hero
     id: about
-    content:
-      # The user's folder name in content/authors/
-      username: admin
     design:
       spacing:
         padding: [0, 0, 0, 0]
-      biography:
-        style: 'text-align: justify; font-size: 0.8em;'
   - block: collection
     id: research
     content:
-      title: Selected research & projects
-      text: A growing record of experiments, systems, and algorithms across robotics and intelligent machines.
+      title: Selected work
+      text: Research notes and engineering projects across robotic arms, aerial systems, autonomous vehicles, and collaborative robots.
       filters:
         folders:
           - blog

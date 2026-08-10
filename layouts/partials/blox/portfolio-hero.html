@@ -1,0 +1,69 @@
+{{/* Custom editorial portfolio hero. */}}
+{{ $authorPage := site.GetPage "/authors/admin" }}
+{{ $avatar := ($authorPage.Resources.ByType "image").GetMatch "*avatar*" }}
+{{ $portrait := $avatar.Fill "900x1120 Center webp q90" }}
+{{ $armPage := site.GetPage "/blog/xiaomi" }}
+{{ $armImage := ($armPage.Resources.ByType "image").GetMatch "featured*" }}
+{{ $armThumb := $armImage.Fill "820x640 Center webp q88" }}
+{{ $dronePage := site.GetPage "/blog/DEA_drone" }}
+{{ $droneImage := ($dronePage.Resources.ByType "image").GetMatch "featured*" }}
+{{ $droneThumb := $droneImage.Fill "620x760 Center webp q88" }}
+
+<div class="portfolio-home">
+  <div class="portfolio-grid" aria-hidden="true"></div>
+
+  <div class="portfolio-hero-inner">
+    <div class="portfolio-copy">
+      <p class="portfolio-kicker"><span>Research portfolio</span> Tsinghua University</p>
+      <h1 class="portfolio-title">
+        <span>Zilin</span>
+        <span class="portfolio-title-accent">Chen<span class="portfolio-dot">.</span></span>
+      </h1>
+      <p class="portfolio-cn-name">陈子林 <span>/ Robotics &amp; Control Researcher</span></p>
+      <p class="portfolio-intro">
+        I build intelligent machines that move with precision—connecting control theory,
+        motion planning, simulation, and real-world robotic systems.
+      </p>
+
+      <div class="portfolio-actions">
+        <a class="portfolio-button portfolio-button-primary" href="{{ "/blog/" | relLangURL }}">
+          Explore my research <span aria-hidden="true">↗</span>
+        </a>
+        <a class="portfolio-button portfolio-button-quiet" href="{{ "/uploads/Zilin_Chen_Personal_CV.pdf" | relURL }}" target="_blank" rel="noopener">
+          View CV <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <div class="portfolio-contact" aria-label="Contact links">
+        <a href="mailto:chenzili22@mails.tsinghua.edu.cn">Email</a>
+        <a href="https://github.com/Zilin-Chen-22" target="_blank" rel="noopener">GitHub</a>
+        <span>Beijing · China</span>
+      </div>
+    </div>
+
+    <div class="portfolio-visual" aria-label="Portrait and selected robotics work">
+      <div class="portfolio-index" aria-hidden="true">01</div>
+      <figure class="portfolio-portrait-card">
+        <img src="{{ $portrait.RelPermalink }}" width="{{ $portrait.Width }}" height="{{ $portrait.Height }}" alt="Portrait of Zilin Chen">
+        <figcaption><span>Mechanical Engineering</span><strong>Tsinghua University</strong></figcaption>
+      </figure>
+
+      <a class="portfolio-project-card portfolio-project-arm" href="{{ $armPage.RelPermalink }}" aria-label="Read the robotic arm motion planning project">
+        <img src="{{ $armThumb.RelPermalink }}" width="{{ $armThumb.Width }}" height="{{ $armThumb.Height }}" alt="7-DOF robotic arm motion planning project">
+        <span class="portfolio-project-label"><b>Motion planning</b><small>7-DOF robotic arm</small></span>
+      </a>
+
+      <a class="portfolio-project-card portfolio-project-drone" href="{{ $dronePage.RelPermalink }}" aria-label="Read the ultra-lightweight DEA drone project">
+        <img src="{{ $droneThumb.RelPermalink }}" width="{{ $droneThumb.Width }}" height="{{ $droneThumb.Height }}" alt="Ultra-lightweight DEA drone project">
+        <span class="portfolio-project-number">23g</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="portfolio-focus" aria-label="Research focus areas">
+    <p class="portfolio-focus-heading">Current focus</p>
+    <a href="{{ "/tag/motion-planning/" | relLangURL }}"><span>01</span><strong>Motion Planning</strong><small>Algorithms for complex robotic systems</small></a>
+    <a href="{{ "/tag/controller/" | relLangURL }}"><span>02</span><strong>Control Systems</strong><small>From simulation to physical validation</small></a>
+    <a href="{{ "/tag/simulation/" | relLangURL }}"><span>03</span><strong>Robot Simulation</strong><small>Fast, reliable environments for testing</small></a>
+  </div>
+</div>
